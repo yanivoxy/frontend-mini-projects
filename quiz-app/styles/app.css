@@ -1,0 +1,217 @@
+:root {
+  background-color: #F5F5F5;
+  font-size: 10px;
+
+}
+
+*{
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0;
+   padding: 0;
+   color: #30475E;
+}
+
+
+h1 {
+display: flex;
+ font-size: 5.4rem;
+ font-family: monospace;
+ color: #30475E;
+ margin-bottom: 5rem;
+ margin-top: -10rem;
+ align-items: center;
+ align-self: center;
+ margin-left: -5px;
+   overflow: hidden;
+border-right: .15em solid #30475E;
+white-space: nowrap;
+letter-spacing: .15em;
+ animation:
+      typing 5.5s steps(80, end),
+      blink-caret .75s step-end infinite;;
+}
+
+h1 > span {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+h2 {
+   font-size: 4.2rem;
+   margin-bottom: 4rem;
+   font-weight: 700;
+}
+
+h3 {
+  font-size: 2.8rem;
+  font-weight: 500;
+
+}
+
+.container {
+   width: 100vw;
+   height: 100vh; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   max-width: 80rem;
+   margin: 0 400px;
+  }
+
+.container>* {
+ width: 100%;
+}
+
+.games-btn {
+      display: flex;
+      font-family: Arial, Helvetica, sans-serif;
+      border: 0.1rem solid #F05454;
+      font-size: 2.5rem;
+      padding: 1rem 0;
+      width: 40rem;
+      text-align: center;
+      margin-bottom: 1rem;
+      text-decoration: none;
+      color: #30475E;
+      background-color: #F5F5F5;
+      margin-right: -100px;
+      border-radius: 0.5rem;
+      align-items: center;
+  }
+
+ .games-btn:hover {
+    text-decoration: none;
+    background-color: #F05454;
+    color: white;
+    transform:translateY(-0.5rem);
+    transition: 1s;
+ } 
+
+ .game-o-btn {
+         display: flex;
+         font-family: Arial, Helvetica, sans-serif;
+         border: 0.1rem solid #F05454;
+         font-size: 2.5rem;
+         padding: 1rem 0;
+         width: 40rem;
+         text-align: center;
+         margin-bottom: 1rem;
+         text-decoration: none;
+         color: white;
+         background-color: #F05454;
+         margin-right: 10px;
+         border-radius: 0.5rem;
+         align-items: center;
+         box-shadow: 0 2px 2px 0 #30475E;
+ }
+
+ .game-o-btn:hover {
+   text-decoration: none;
+      background-color: #F05454;
+      color: white;
+      transform: translateY(-0.5rem);
+      transition: 1s;
+ }
+
+ .nav {
+      position: fixed;
+      top: 0;
+      background-color: #30475E;
+      color: #F5F5F5;
+ }
+
+.nav-text {
+   text-align: center;
+   background-color: #30475E;
+   color: #F5F5F5;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size:xx-large;
+   font-weight: 800;
+   padding-top: 20px;
+   box-shadow: 0 2px 2p 0 #4374a5;
+   border-radius: 12px;
+   margin-top: -1rem;
+   padding-bottom: 1rem;
+}
+
+.bottom-icon {
+   bottom: 0;
+   right: 0;
+   position: fixed;
+   transition: 1s;
+}
+
+.bottom-icon-css {
+   background-color: #F5F5F5;
+   border: none;
+}
+
+.bottom-icon-css:hover {
+   transition: 0.5s;
+   transform: rotate(90deg);
+   cursor: pointer;
+}
+
+/* The typing effect */
+@keyframes typing {
+   from {
+      width: 0
+   }
+
+   to {
+      width: 100%
+   }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+   from,
+   to {
+      border-color: transparent
+   }
+}
+
+.help-menu {
+      display: inline;
+      background-color: #F5F5F5;
+      margin-right: 50px;
+      color: #30475E;      
+}
+
+.help-button {
+      margin-top: 50px;
+      border: none;
+      padding-left: 5px;
+      width: 100px;
+      background-color: #F5F5F5;
+      align-items: flex-end;
+      display: flex;
+}
+
+
+.help-button:active {
+transform: scaleX(3px);
+   transition: 1.5s;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+   width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+   box-shadow: inset 0 0 5px grey;
+   border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+   background: red;
+   border-radius: 10px;
+}
+
+
