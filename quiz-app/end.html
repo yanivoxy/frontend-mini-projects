@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="styles/end.css">
+</head>
+<body>
+
+ <nav>
+  <ul style="list-style-type: none">
+   <li class="nav-text"><a href='/index.html'>Home</a></li>
+   <li class="nav-text"><a href='/games.html'>Play Again</a></li>
+   <li class="nav-text"><a href="/highscores.html">View HighScores</a></li>
+  </ul>
+ </nav>
+ <div>
+<div>
+ <h1 id="final-score"></h1>
+</div>
+<div style="display:inline-block;">
+ <div>
+  <form>
+   <input type="text" name="username" placeholder="Username" id="username">
+   <button type="submit" value="Submit" class="sumbit-btn" id="sumbit-btn" onclick="saveHighScore(event)">Save</button>
+  </form>
+ </div>
+</div>
+</div>
+<div>
+ <h2 class="score-h2"></h2>
+</div>
+<div style="display: inline-block;">
+<div>
+<div>
+ <img src="https://media.tenor.com/_4YgA77ExHEAAAAd/rick-roll.gif" class="rickroll">
+</div>
+<div>
+ <a href="javascript:confetti()" onclick=confetti class="btn-confetti" >Activate Confetti</a>
+</div>
+</div>
+</div>
+</div>
+
+<script type="module">
+ import confetti from 'https://cdn.skypack.dev/canvas-confetti';
+ confetti();
+
+</script>
+<script src="game.js"></script>
+<script src="end.js"></script>
+</body>
+</html>
